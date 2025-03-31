@@ -2,6 +2,7 @@ library ieee;
 library base;
 use ieee.std_logic_1164.all;
 use base.base_adder_pkg.all;
+
 entity bcd is
     port (
         in_a       : in std_logic_vector(3 downto 0);
@@ -11,6 +12,7 @@ entity bcd is
         carry_out : out std_logic
     );
 end entity;
+
 architecture rtl_bcd of bcd is
     signal added : STD_LOGIC_VECTOR(3 downto 0);
     signal cout_base : STD_LOGIC;
