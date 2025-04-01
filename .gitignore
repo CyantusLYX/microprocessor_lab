@@ -1,2 +1,7 @@
-db
-.qdf
+/*
+!/.gitignore
+!/*.vhdl
+!/*.vhd
+!/*qsf
+!/*qpf
+!/db

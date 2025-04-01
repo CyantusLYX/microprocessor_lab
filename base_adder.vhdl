@@ -18,8 +18,9 @@ begin
 end architecture;
 
 library ieee;
+library base;
 use ieee.std_logic_1164.all;
-use work.fa_pkg.all;
+use base.adder_pkg.all;
 
 entity base_adder is
   port (

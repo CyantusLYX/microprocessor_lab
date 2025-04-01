@@ -1,5 +1,5 @@
-set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE AUTO
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
 
 set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
 set_global_assignment -name VHDL_FILE "d:\\code\\MicroProcessor_lab2\\base_adder.vhdl" -library base
@@ -14,3 +14,46 @@ set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\lcddec.vhdl"
 set_global_assignment -name TOP_LEVEL_ENTITY bcd_calculate
 set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd.vhdl"
 set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd_pkg.vhdl"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_location_assignment PIN_G19 -to of_out
+
+set_location_assignment PIN_G18 -to seg7_out_0[0]
+set_location_assignment PIN_F22 -to seg7_out_0[1]
+set_location_assignment PIN_E17 -to seg7_out_0[2]
+set_location_assignment PIN_L26 -to seg7_out_0[3]
+set_location_assignment PIN_L25 -to seg7_out_0[4]
+set_location_assignment PIN_J22 -to seg7_out_0[5]
+set_location_assignment PIN_H22 -to seg7_out_0[6]
+set_location_assignment PIN_M24 -to seg7_out_1[0]
+set_location_assignment PIN_Y22 -to seg7_out_1[1]
+set_location_assignment PIN_W21 -to seg7_out_1[2]
+set_location_assignment PIN_W22 -to seg7_out_1[3]
+set_location_assignment PIN_W25 -to seg7_out_1[4]
+set_location_assignment PIN_U23 -to seg7_out_1[5]
+set_location_assignment PIN_U24 -to seg7_out_1[6]
+set_location_assignment PIN_AB28 -to sw_a[0]
+set_location_assignment PIN_AC28 -to sw_a[1]
+set_location_assignment PIN_AC27 -to sw_a[2]
+set_location_assignment PIN_AD27 -to sw_a[3]
+set_location_assignment PIN_AB27 -to sw_a[4]
+set_location_assignment PIN_AC26 -to sw_a[5]
+set_location_assignment PIN_AD26 -to sw_a[6]
+set_location_assignment PIN_AB26 -to sw_a[7]
+
+set_location_assignment PIN_AC25 -to sw_b[0]
+set_location_assignment PIN_AB25 -to sw_b[1]
+set_location_assignment PIN_AC24 -to sw_b[2]
+set_location_assignment PIN_AB24 -to sw_b[3]
+set_location_assignment PIN_AB23 -to sw_b[4]
+set_location_assignment PIN_AA24 -to sw_b[5]
+set_location_assignment PIN_AA23 -to sw_b[6]
+set_location_assignment PIN_AA22 -to sw_b[7]
+
+set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd_adder.vhdl"
+set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd_subtractor.vhdl"
+set_location_assignment PIN_Y24 -to op
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
