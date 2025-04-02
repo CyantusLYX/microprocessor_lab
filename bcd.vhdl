@@ -27,8 +27,7 @@ begin
         b => in_b,
         cin => carry_in,
         sum => added,
-        cout => cout_base,
-        of_out => open
+        cout => cout_base
     );
     is_bcd <= cout_base or (added(3) and (added(2) or added(1)));
     b_bcd(0) <= '0';
@@ -41,8 +40,7 @@ begin
         b => b_bcd,
         cin => '0',
         sum => sum,
-        cout => cout_bcd,
-        of_out => open
+        cout => cout_bcd
     );
     carry_out <= cout_base or cout_bcd;
     is_bcd_out <= is_bcd;

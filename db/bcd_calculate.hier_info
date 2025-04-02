@@ -40,21 +40,21 @@ op => mux_out[3].OUTPUTSELECT
 op => mux_out[2].OUTPUTSELECT
 op => mux_out[1].OUTPUTSELECT
 op => mux_out[0].OUTPUTSELECT
-seg7_out_0[0] << lcddec:seg7_0.seg7_out[0]
-seg7_out_0[1] << lcddec:seg7_0.seg7_out[1]
-seg7_out_0[2] << lcddec:seg7_0.seg7_out[2]
-seg7_out_0[3] << lcddec:seg7_0.seg7_out[3]
-seg7_out_0[4] << lcddec:seg7_0.seg7_out[4]
-seg7_out_0[5] << lcddec:seg7_0.seg7_out[5]
-seg7_out_0[6] << lcddec:seg7_0.seg7_out[6]
-seg7_out_1[0] << lcddec:seg7_1.seg7_out[0]
-seg7_out_1[1] << lcddec:seg7_1.seg7_out[1]
-seg7_out_1[2] << lcddec:seg7_1.seg7_out[2]
-seg7_out_1[3] << lcddec:seg7_1.seg7_out[3]
-seg7_out_1[4] << lcddec:seg7_1.seg7_out[4]
-seg7_out_1[5] << lcddec:seg7_1.seg7_out[5]
-seg7_out_1[6] << lcddec:seg7_1.seg7_out[6]
-of_out << mux_out.DB_MAX_OUTPUT_PORT_TYPE
+seg7_out_0[0] <= lcddec:seg7_0.seg7_out[0]
+seg7_out_0[1] <= lcddec:seg7_0.seg7_out[1]
+seg7_out_0[2] <= lcddec:seg7_0.seg7_out[2]
+seg7_out_0[3] <= lcddec:seg7_0.seg7_out[3]
+seg7_out_0[4] <= lcddec:seg7_0.seg7_out[4]
+seg7_out_0[5] <= lcddec:seg7_0.seg7_out[5]
+seg7_out_0[6] <= lcddec:seg7_0.seg7_out[6]
+seg7_out_1[0] <= lcddec:seg7_1.seg7_out[0]
+seg7_out_1[1] <= lcddec:seg7_1.seg7_out[1]
+seg7_out_1[2] <= lcddec:seg7_1.seg7_out[2]
+seg7_out_1[3] <= lcddec:seg7_1.seg7_out[3]
+seg7_out_1[4] <= lcddec:seg7_1.seg7_out[4]
+seg7_out_1[5] <= lcddec:seg7_1.seg7_out[5]
+seg7_out_1[6] <= lcddec:seg7_1.seg7_out[6]
+of_out <= mux_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_adder:bcd_adder_0
@@ -118,7 +118,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_adder:bcd_adder_0|bcd:bcd_0|base_adder_4b:FA1|fa:FA0
@@ -180,7 +179,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_adder:bcd_adder_0|bcd:bcd_0|base_adder_4b:FA_BCD|fa:FA0
@@ -260,7 +258,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_adder:bcd_adder_0|bcd:bcd_1|base_adder_4b:FA1|fa:FA0
@@ -322,7 +319,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_adder:bcd_adder_0|bcd:bcd_1|base_adder_4b:FA_BCD|fa:FA0
@@ -429,7 +425,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_0|base_adder_4b:add_brr|fa:FA0
@@ -495,7 +490,6 @@ sum[1] <= base_adder_4b:adder.sum[1]
 sum[2] <= base_adder_4b:adder.sum[2]
 sum[3] <= base_adder_4b:adder.sum[3]
 cout <= base_adder_4b:adder.cout
-of_out <= base_adder_4b:adder.of_out
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_0|adder_4b:add_b_comp|base_adder_4b:adder
@@ -513,7 +507,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_0|adder_4b:add_b_comp|base_adder_4b:adder|fa:FA0
@@ -593,7 +586,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_0|bcd:add_bcd|base_adder_4b:FA1|fa:FA0
@@ -655,7 +647,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_0|bcd:add_bcd|base_adder_4b:FA_BCD|fa:FA0
@@ -721,7 +712,6 @@ sum[1] <= base_adder_4b:adder.sum[1]
 sum[2] <= base_adder_4b:adder.sum[2]
 sum[3] <= base_adder_4b:adder.sum[3]
 cout <= base_adder_4b:adder.cout
-of_out <= base_adder_4b:adder.of_out
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_0|adder_4b:out_comp|base_adder_4b:adder
@@ -739,7 +729,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_0|adder_4b:out_comp|base_adder_4b:adder|fa:FA0
@@ -818,7 +807,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_1|base_adder_4b:add_brr|fa:FA0
@@ -884,7 +872,6 @@ sum[1] <= base_adder_4b:adder.sum[1]
 sum[2] <= base_adder_4b:adder.sum[2]
 sum[3] <= base_adder_4b:adder.sum[3]
 cout <= base_adder_4b:adder.cout
-of_out <= base_adder_4b:adder.of_out
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_1|adder_4b:add_b_comp|base_adder_4b:adder
@@ -902,7 +889,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_1|adder_4b:add_b_comp|base_adder_4b:adder|fa:FA0
@@ -982,7 +968,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_1|bcd:add_bcd|base_adder_4b:FA1|fa:FA0
@@ -1044,7 +1029,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_1|bcd:add_bcd|base_adder_4b:FA_BCD|fa:FA0
@@ -1110,7 +1094,6 @@ sum[1] <= base_adder_4b:adder.sum[1]
 sum[2] <= base_adder_4b:adder.sum[2]
 sum[3] <= base_adder_4b:adder.sum[3]
 cout <= base_adder_4b:adder.cout
-of_out <= base_adder_4b:adder.of_out
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_1|adder_4b:out_comp|base_adder_4b:adder
@@ -1128,7 +1111,6 @@ sum[1] <= fa:FA1.sum
 sum[2] <= fa:FA2.sum
 sum[3] <= fa:FA3.sum
 cout <= fa:FA3.cout
-of_out <= of_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |bcd_calculate|bcd_subtractor:bcd_subtractor_0|bcd_sub_4b:bcd_sub_1|adder_4b:out_comp|base_adder_4b:adder|fa:FA0

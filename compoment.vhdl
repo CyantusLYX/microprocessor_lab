@@ -16,18 +16,27 @@ end package;
 library ieee;
 use ieee.std_logic_1164.all;
 
-package base_adder_pkg is
-    component base_adder is
+package adder_pkg is
+    component base_adder_4b is
         port (
             a    : in std_logic_vector(3 downto 0);
             b    : in std_logic_vector(3 downto 0);
             cin  : in std_logic;
             sum  : out std_logic_vector(3 downto 0);
-            cout : out std_logic;
-            of_out : out std_logic
+            cout : out std_logic
         );          
     end component;
-end package base_adder_pkg;
+    component adder_4b is 
+        port(
+            a    : in std_logic_vector(3 downto 0);
+            b    : in std_logic_vector(3 downto 0);
+            cin  : in std_logic;
+            op   : in std_logic;
+            sum  : out std_logic_vector(3 downto 0);
+            cout : out std_logic
+        );
+	end component;
+end package adder_pkg;
 
 library ieee;
 use ieee.std_logic_1164.all;

@@ -1,19 +1,19 @@
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
 
-set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
-set_global_assignment -name VHDL_FILE "d:\\code\\MicroProcessor_lab2\\base_adder.vhdl" -library base
-set_global_assignment -name VHDL_FILE "d:\\code\\MicroProcessor_lab2\\compoment.vhdl" -library base
-set_global_assignment -name VHDL_FILE "d:\\code\\MicroProcessor_lab2\\lcddec.vhdl" -library base
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd_calculate.vhdl"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\base_adder.vhdl" -library base
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\compoment.vhdl" -library base
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\lcddec.vhdl" -library base
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\bcd_calculate.vhdl"
 set_global_assignment -name ALLOW_REGISTER_RETIMING ON
 set_global_assignment -name OPTIMIZATION_MODE BALANCED
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\base_adder.vhdl"
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\compoment.vhdl"
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\lcddec.vhdl"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\base_adder.vhdl"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\compoment.vhdl"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\lcddec.vhdl"
 set_global_assignment -name TOP_LEVEL_ENTITY bcd_calculate
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd.vhdl"
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd_pkg.vhdl"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\bcd.vhdl"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\bcd_pkg.vhdl"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -53,7 +53,7 @@ set_location_assignment PIN_AA24 -to sw_b[5]
 set_location_assignment PIN_AA23 -to sw_b[6]
 set_location_assignment PIN_AA22 -to sw_b[7]
 
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd_adder.vhdl"
-set_global_assignment -name VHDL_FILE "d:\\code\\MP_lab3\\bcd_subtractor.vhdl"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\bcd_adder.vhdl"
+set_global_assignment -name VHDL_FILE "C:\\Users\\LAB 1222\\microprocessor_lab\\bcd_subtractor.vhdl"
 set_location_assignment PIN_Y24 -to op
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
